@@ -7,27 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0386876694C87061EC1483C330997808 /* CKContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96940DA0719E201CABF1DFBE50B68B79 /* CKContainerViewController.m */; };
+		06D17FB9321D2CF5297F4B8893A09880 /* CKContainermodule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3B55F5565BC4FAF0044D5529275FEF /* CKContainermodule-dummy.m */; };
 		1E6BE257C12B92C0463294A2FA467E34 /* Pods-CKContainermodule_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 117108D7B2270138A1A93041A81E29D8 /* Pods-CKContainermodule_Tests-dummy.m */; };
-		36ABCE8A05E43577130D9512ECE19BE4 /* CKContainermodule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 391EA57CD32460CC57466D3C99208996 /* CKContainermodule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F0ED43F772427289E8A42F40825AD68 /* CKContainermodule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78202EC74E59A5EC1F83EB11ACE1146F /* CKContainermodule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38511FDB1243D41297E9C01FD8C2434D /* Pods-CKContainermodule_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7E0EBAFAC1741775F20FD3050CF622 /* Pods-CKContainermodule_Example-dummy.m */; };
-		3B8931BC1B23C1B7C175EB00F704009D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		750A845A028850351EA9378236C31A9E /* Pods-CKContainermodule_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F80061CF3BB65693620EFB9012A6857D /* Pods-CKContainermodule_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89FCC2AB02D800A01600B732EEA56270 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8C71110DAC4A84B5FE7A54A35671D6AC /* CKContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BDE82E65C405E20E22BC323DC19483D7 /* CKContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE1D15C3119D2A19173A2633F812A907 /* Pods-CKContainermodule_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B963A644686A8D221B118EFFE6657B5A /* Pods-CKContainermodule_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CCD0DC86239A7F5E1523D0A8532ADC94 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 214D5C7DA8954B1C238B82E3B6D66038 /* ReplaceMe.m */; };
-		D921D53B2D9D950FD5A68F72DE797522 /* CKContainermodule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6725755EAFA729476EB01BE8B9709947 /* CKContainermodule-dummy.m */; };
+		B8AF33946F0BC74EA26AF2217953A819 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F3746108EECED1F6F89CD5A466CE9E9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0EB45B8EFC1692905687E8D9C601C595 /* PBXContainerItemProxy */ = {
+		44D5E7DDD36BCD9A41B10249F46B1A52 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AD838D1C1070F2467CFAE6233C38618C;
 			remoteInfo = CKContainermodule;
 		};
-		3F53A9F0BCCFDC37F230ADE5E8F2E8D4 /* PBXContainerItemProxy */ = {
+		623FDFC209465AED47EC7947A2C2D183 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -37,37 +38,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08C3D8B30229ED10561FD6025E2B5BD6 /* CKContainermodule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CKContainermodule.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		0DBA237805135AB62F64BAC9F19EABB6 /* Pods-CKContainermodule_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CKContainermodule_Example-Info.plist"; sourceTree = "<group>"; };
-		0DBE964327E61276C41830987239A5EF /* CKContainermodule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CKContainermodule.release.xcconfig; sourceTree = "<group>"; };
+		0E0CF1AF47B50AD202D86EF51329BC2C /* CKContainermodule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CKContainermodule-prefix.pch"; sourceTree = "<group>"; };
+		0EE211D85D96566361754A4C5ECA7D77 /* CKContainermodule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CKContainermodule.release.xcconfig; sourceTree = "<group>"; };
+		0F3B55F5565BC4FAF0044D5529275FEF /* CKContainermodule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CKContainermodule-dummy.m"; sourceTree = "<group>"; };
 		117108D7B2270138A1A93041A81E29D8 /* Pods-CKContainermodule_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CKContainermodule_Tests-dummy.m"; sourceTree = "<group>"; };
 		198A20364915846290CC8CECE9AB3124 /* Pods-CKContainermodule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CKContainermodule_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1E36659D8C81B854E53EDFFB2E1CD6B0 /* Pods-CKContainermodule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CKContainermodule_Example.release.xcconfig"; sourceTree = "<group>"; };
-		214D5C7DA8954B1C238B82E3B6D66038 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = CKContainermodule/Classes/ReplaceMe.m; sourceTree = "<group>"; };
-		2AB6B5CAA1A427F04C7B6B12885A9A36 /* CKContainermodule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CKContainermodule-prefix.pch"; sourceTree = "<group>"; };
+		1EC8531250971DD8CB04273D705F0C42 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		36FFFB31E9421139B75CEE0DFBFFA74B /* Pods-CKContainermodule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CKContainermodule_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		391EA57CD32460CC57466D3C99208996 /* CKContainermodule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CKContainermodule-umbrella.h"; sourceTree = "<group>"; };
 		3D7E0EBAFAC1741775F20FD3050CF622 /* Pods-CKContainermodule_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CKContainermodule_Example-dummy.m"; sourceTree = "<group>"; };
 		3F47BFCD27D37B69E7E7C743D0D9D65A /* Pods-CKContainermodule_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CKContainermodule_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4F71BF8999A386E5FE284CE287481EC7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		52E86DD9207ECB4D9C512EEC3E9421B9 /* CKContainermodule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CKContainermodule-Info.plist"; sourceTree = "<group>"; };
 		546B6E6E260AF3ACA8E248ADF3F1D64C /* Pods-CKContainermodule_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CKContainermodule_Example.modulemap"; sourceTree = "<group>"; };
-		6725755EAFA729476EB01BE8B9709947 /* CKContainermodule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CKContainermodule-dummy.m"; sourceTree = "<group>"; };
 		6F7E7AFA1C866483F48B498ECF145587 /* Pods-CKContainermodule_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CKContainermodule_Example-frameworks.sh"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9684286C6A950D530F6304610A29F98C /* CKContainermodule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CKContainermodule.debug.xcconfig; sourceTree = "<group>"; };
-		9A04E78E60D6139C349B1F0107FB8CAA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		78202EC74E59A5EC1F83EB11ACE1146F /* CKContainermodule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CKContainermodule-umbrella.h"; sourceTree = "<group>"; };
+		96940DA0719E201CABF1DFBE50B68B79 /* CKContainerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CKContainerViewController.m; path = CKContainermodule/Classes/CKContainerViewController.m; sourceTree = "<group>"; };
+		98798FE05AB1C9C8396CD036AFACD431 /* CKContainermodule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CKContainermodule.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ACF23F89263BCC2B05F8B5A8FFC06039 /* Pods-CKContainermodule_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CKContainermodule_Tests.modulemap"; sourceTree = "<group>"; };
-		B359499F5AC991C89B47D74E6D79A0D9 /* CKContainermodule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CKContainermodule-Info.plist"; sourceTree = "<group>"; };
 		B963A644686A8D221B118EFFE6657B5A /* Pods-CKContainermodule_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CKContainermodule_Tests-umbrella.h"; sourceTree = "<group>"; };
-		C7E946CE98F3B0FBD8DF19A1BD109460 /* CKContainermodule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CKContainermodule.modulemap; sourceTree = "<group>"; };
-		CFC16E21A3DAD3A1BBB0B9F8431DF22D /* Pods_CKContainermodule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CKContainermodule_Tests.framework; path = "Pods-CKContainermodule_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE82E65C405E20E22BC323DC19483D7 /* CKContainerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CKContainerViewController.h; path = CKContainermodule/Classes/CKContainerViewController.h; sourceTree = "<group>"; };
+		CE3DF0486F7899E8E4B031CE7640A1B2 /* CKContainermodule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CKContainermodule.debug.xcconfig; sourceTree = "<group>"; };
+		CFC16E21A3DAD3A1BBB0B9F8431DF22D /* Pods_CKContainermodule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CKContainermodule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57F5C66A85DEFB8E10F68B309204FEF /* Pods-CKContainermodule_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CKContainermodule_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DCBCE78C96E53AEBAD672D65BE66EE6D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DF5B5B4B3908AB6EFB10A01FB28A2FC2 /* Pods-CKContainermodule_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CKContainermodule_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E0CE7517B9328467F86D98033FCE2E4A /* CKContainermodule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CKContainermodule.framework; path = CKContainermodule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0CE7517B9328467F86D98033FCE2E4A /* CKContainermodule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CKContainermodule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3796FBA4D34063D743B7A32D3EB4C95 /* Pods-CKContainermodule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CKContainermodule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E774A16DE94DB7955662D2C496AE07CF /* CKContainermodule.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CKContainermodule.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EAE16DA50D9132DBDDC3FF41A1BCBFDC /* Pods-CKContainermodule_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CKContainermodule_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		EC4E9F1403E868777ED65BA0E8FD701E /* Pods_CKContainermodule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CKContainermodule_Example.framework; path = "Pods-CKContainermodule_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4E9F1403E868777ED65BA0E8FD701E /* Pods_CKContainermodule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CKContainermodule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22BF5B1BB004158FF457F9D2718F526 /* Pods-CKContainermodule_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CKContainermodule_Tests-Info.plist"; sourceTree = "<group>"; };
 		F80061CF3BB65693620EFB9012A6857D /* Pods-CKContainermodule_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CKContainermodule_Example-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,32 +91,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF894D9F0035503ABDDC453BD7A2F01C /* Frameworks */ = {
+		AAB4D0E38FA8F226AF8E0D54684B172D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B8931BC1B23C1B7C175EB00F704009D /* Foundation.framework in Frameworks */,
+				B8AF33946F0BC74EA26AF2217953A819 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08588C70A98278B99D2A16FBEB541A72 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C7E946CE98F3B0FBD8DF19A1BD109460 /* CKContainermodule.modulemap */,
-				6725755EAFA729476EB01BE8B9709947 /* CKContainermodule-dummy.m */,
-				B359499F5AC991C89B47D74E6D79A0D9 /* CKContainermodule-Info.plist */,
-				2AB6B5CAA1A427F04C7B6B12885A9A36 /* CKContainermodule-prefix.pch */,
-				391EA57CD32460CC57466D3C99208996 /* CKContainermodule-umbrella.h */,
-				9684286C6A950D530F6304610A29F98C /* CKContainermodule.debug.xcconfig */,
-				0DBE964327E61276C41830987239A5EF /* CKContainermodule.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CKContainermodule";
-			sourceTree = "<group>";
-		};
 		1E5A1751D9640606EF00D938CBBCC49A /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +110,14 @@
 				CFC16E21A3DAD3A1BBB0B9F8431DF22D /* Pods_CKContainermodule_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		30D3EBD4A50E678B67F39A4E79CB93A7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC0B3BDB67AC642C1CF1C6205A007C00 /* CKContainermodule */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		4E3E2FC6ED40E9D4B83F738F056647EA /* Pods-CKContainermodule_Tests */ = {
@@ -158,14 +153,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		77E12C6012BD882EE962FCF26CC8C444 /* Pod */ = {
+		A160B9BB64898A999A2AC21FAF3BB749 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E774A16DE94DB7955662D2C496AE07CF /* CKContainermodule.podspec */,
-				9A04E78E60D6139C349B1F0107FB8CAA /* LICENSE */,
-				4F71BF8999A386E5FE284CE287481EC7 /* README.md */,
+				98798FE05AB1C9C8396CD036AFACD431 /* CKContainermodule.modulemap */,
+				0F3B55F5565BC4FAF0044D5529275FEF /* CKContainermodule-dummy.m */,
+				52E86DD9207ECB4D9C512EEC3E9421B9 /* CKContainermodule-Info.plist */,
+				0E0CF1AF47B50AD202D86EF51329BC2C /* CKContainermodule-prefix.pch */,
+				78202EC74E59A5EC1F83EB11ACE1146F /* CKContainermodule-umbrella.h */,
+				CE3DF0486F7899E8E4B031CE7640A1B2 /* CKContainermodule.debug.xcconfig */,
+				0EE211D85D96566361754A4C5ECA7D77 /* CKContainermodule.release.xcconfig */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CKContainermodule";
 			sourceTree = "<group>";
 		};
 		A65A3D6F13C2C74C6225885E396D3CEB /* Pods-CKContainermodule_Example */ = {
@@ -189,22 +189,11 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				E51B52F16EBB2FF934E71E62C7A40F3C /* Development Pods */,
+				30D3EBD4A50E678B67F39A4E79CB93A7 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				1E5A1751D9640606EF00D938CBBCC49A /* Products */,
 				544B03ADCBEF933776A3257B30AC2D87 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		CF6B5946781C495D82540D6C8CC15200 /* CKContainermodule */ = {
-			isa = PBXGroup;
-			children = (
-				214D5C7DA8954B1C238B82E3B6D66038 /* ReplaceMe.m */,
-				77E12C6012BD882EE962FCF26CC8C444 /* Pod */,
-				08588C70A98278B99D2A16FBEB541A72 /* Support Files */,
-			);
-			name = CKContainermodule;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -215,25 +204,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E51B52F16EBB2FF934E71E62C7A40F3C /* Development Pods */ = {
+		ED62A7B06AAD7B8B40D702871AE2E60F /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				CF6B5946781C495D82540D6C8CC15200 /* CKContainermodule */,
+				08C3D8B30229ED10561FD6025E2B5BD6 /* CKContainermodule.podspec */,
+				DCBCE78C96E53AEBAD672D65BE66EE6D /* LICENSE */,
+				1EC8531250971DD8CB04273D705F0C42 /* README.md */,
 			);
-			name = "Development Pods";
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		FC0B3BDB67AC642C1CF1C6205A007C00 /* CKContainermodule */ = {
+			isa = PBXGroup;
+			children = (
+				BDE82E65C405E20E22BC323DC19483D7 /* CKContainerViewController.h */,
+				96940DA0719E201CABF1DFBE50B68B79 /* CKContainerViewController.m */,
+				ED62A7B06AAD7B8B40D702871AE2E60F /* Pod */,
+				A160B9BB64898A999A2AC21FAF3BB749 /* Support Files */,
+			);
+			name = CKContainermodule;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		570C81AC6280E77F0A4D482782E0D503 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36ABCE8A05E43577130D9512ECE19BE4 /* CKContainermodule-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6FEC1572C7D41B354CAF81306F330F09 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,17 +245,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FEE28DBA973770B68B90AC01C568B44B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0ED43F772427289E8A42F40825AD68 /* CKContainermodule-umbrella.h in Headers */,
+				8C71110DAC4A84B5FE7A54A35671D6AC /* CKContainerViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		AD838D1C1070F2467CFAE6233C38618C /* CKContainermodule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBCBE3719C1FBE1471743B9B8C580086 /* Build configuration list for PBXNativeTarget "CKContainermodule" */;
+			buildConfigurationList = 18DAAB40FC19FF805A9AA832BCE6FA79 /* Build configuration list for PBXNativeTarget "CKContainermodule" */;
 			buildPhases = (
-				570C81AC6280E77F0A4D482782E0D503 /* Headers */,
-				CB71F9D52489DB24E3E7C7A0D0AF2CA1 /* Sources */,
-				FF894D9F0035503ABDDC453BD7A2F01C /* Frameworks */,
-				05349137781C046E3982988C1C6853E0 /* Resources */,
+				FEE28DBA973770B68B90AC01C568B44B /* Headers */,
+				5C9C126319DC1F2428D2AA0843395971 /* Sources */,
+				AAB4D0E38FA8F226AF8E0D54684B172D /* Frameworks */,
+				2E8637615782D64BA1AAA1791E948EA1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -283,7 +287,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C5BA010FA74B00BD439AD48D7E655B50 /* PBXTargetDependency */,
+				65EAFF0A764B134053EA2588B2C08C8B /* PBXTargetDependency */,
 			);
 			name = "Pods-CKContainermodule_Example";
 			productName = "Pods-CKContainermodule_Example";
@@ -302,7 +306,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				196B4C99E022D161D5E3E05D92ABF43D /* PBXTargetDependency */,
+				37ABB73166A749BB2D2778CE8B6B0182 /* PBXTargetDependency */,
 			);
 			name = "Pods-CKContainermodule_Tests";
 			productName = "Pods-CKContainermodule_Tests";
@@ -339,7 +343,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		05349137781C046E3982988C1C6853E0 /* Resources */ = {
+		2E8637615782D64BA1AAA1791E948EA1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,6 +375,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5C9C126319DC1F2428D2AA0843395971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06D17FB9321D2CF5297F4B8893A09880 /* CKContainermodule-dummy.m in Sources */,
+				0386876694C87061EC1483C330997808 /* CKContainerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE64C3015C20901F2E1FA48CCF1BE0E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,63 +392,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB71F9D52489DB24E3E7C7A0D0AF2CA1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D921D53B2D9D950FD5A68F72DE797522 /* CKContainermodule-dummy.m in Sources */,
-				CCD0DC86239A7F5E1523D0A8532ADC94 /* ReplaceMe.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		196B4C99E022D161D5E3E05D92ABF43D /* PBXTargetDependency */ = {
+		37ABB73166A749BB2D2778CE8B6B0182 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-CKContainermodule_Example";
 			target = B8A25B04E7E3C5BE035CA358953192C7 /* Pods-CKContainermodule_Example */;
-			targetProxy = 3F53A9F0BCCFDC37F230ADE5E8F2E8D4 /* PBXContainerItemProxy */;
+			targetProxy = 623FDFC209465AED47EC7947A2C2D183 /* PBXContainerItemProxy */;
 		};
-		C5BA010FA74B00BD439AD48D7E655B50 /* PBXTargetDependency */ = {
+		65EAFF0A764B134053EA2588B2C08C8B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CKContainermodule;
 			target = AD838D1C1070F2467CFAE6233C38618C /* CKContainermodule */;
-			targetProxy = 0EB45B8EFC1692905687E8D9C601C595 /* PBXContainerItemProxy */;
+			targetProxy = 44D5E7DDD36BCD9A41B10249F46B1A52 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		122C9DFB102AD7C0E33F59BFFE0F2517 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9684286C6A950D530F6304610A29F98C /* CKContainermodule.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CKContainermodule/CKContainermodule-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CKContainermodule/CKContainermodule-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CKContainermodule/CKContainermodule.modulemap";
-				PRODUCT_MODULE_NAME = CKContainermodule;
-				PRODUCT_NAME = CKContainermodule;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -502,9 +476,9 @@
 			};
 			name = Debug;
 		};
-		2AD887AD164D5EB17CBE06DB044755C7 /* Release */ = {
+		7EE015FECAD8F6C801A255C35479F7CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DBE964327E61276C41830987239A5EF /* CKContainermodule.release.xcconfig */;
+			baseConfigurationReference = 0EE211D85D96566361754A4C5ECA7D77 /* CKContainermodule.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -685,8 +659,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -725,9 +698,48 @@
 			};
 			name = Release;
 		};
+		E1C6F0595DD638A5A59AFEDD6DC7F731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE3DF0486F7899E8E4B031CE7640A1B2 /* CKContainermodule.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CKContainermodule/CKContainermodule-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CKContainermodule/CKContainermodule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CKContainermodule/CKContainermodule.modulemap";
+				PRODUCT_MODULE_NAME = CKContainermodule;
+				PRODUCT_NAME = CKContainermodule;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18DAAB40FC19FF805A9AA832BCE6FA79 /* Build configuration list for PBXNativeTarget "CKContainermodule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1C6F0595DD638A5A59AFEDD6DC7F731 /* Debug */,
+				7EE015FECAD8F6C801A255C35479F7CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -742,15 +754,6 @@
 			buildConfigurations = (
 				A475FC0D2959E361A35740B35726567D /* Debug */,
 				A6553C82FB177061AA2E150581C92532 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EBCBE3719C1FBE1471743B9B8C580086 /* Build configuration list for PBXNativeTarget "CKContainermodule" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				122C9DFB102AD7C0E33F59BFFE0F2517 /* Debug */,
-				2AD887AD164D5EB17CBE06DB044755C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

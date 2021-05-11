@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "CKContainerViewController.h"
 
 FOUNDATION_EXPORT double CKContainermoduleVersionNumber;
 FOUNDATION_EXPORT const unsigned char CKContainermoduleVersionString[];
