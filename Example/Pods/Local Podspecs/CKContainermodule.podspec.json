@@ -12,7 +12,7 @@
     "fadil.zeng": "fadil.zeng@kikatech.com"
   },
   "source": {
-    "git": "https://github.com/fadil.zeng/CKContainermodule.git",
+    "git": "https://github.com/firestory/CKContainerModule.git",
     "tag": "0.1.0"
   },
   "platforms": {
