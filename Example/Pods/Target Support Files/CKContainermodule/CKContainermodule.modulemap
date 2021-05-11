@@ -1,0 +1,6 @@
+framework module CKContainermodule {
+  umbrella header "CKContainermodule-umbrella.h"
+
+  export *
+  module * { export * }
+}

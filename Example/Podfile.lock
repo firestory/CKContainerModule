@@ -1,0 +1,16 @@
+PODS:
+  - CKContainermodule (0.1.0)
+
+DEPENDENCIES:
+  - CKContainermodule (from `../`)
+
+EXTERNAL SOURCES:
+  CKContainermodule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CKContainermodule: eddd0f32bc72aa3650c3e85e75c7f448453124f3
+
+PODFILE CHECKSUM: 9bc88528afde553a9468397ba68749837909a766
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,6 @@
+framework module Pods_CKContainermodule_Example {
+  umbrella header "Pods-CKContainermodule_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
