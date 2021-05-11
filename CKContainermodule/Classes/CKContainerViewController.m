@@ -70,7 +70,7 @@
     
     [super viewDidLoad];
     self.view.opaque = YES;
-    self.view.backgroundColor = [self colorFromHexString:@"#E6E6E8"];
+    self.view.backgroundColor = [UIColor whiteColor];
     self.containerView = [UIView new];
     self.containerView.translatesAutoresizingMaskIntoConstraints = NO;
     self.containerView.backgroundColor = [UIColor clearColor];
@@ -156,19 +156,5 @@
     [self.containerView addConstraint:[NSLayoutConstraint constraintWithItem:self.selectedViewControllerView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.containerView attribute:NSLayoutAttributeTrailing multiplier:1 constant:0]];
 }
 
-- (UIColor *)colorFromHexString:(NSString *)hexString
-{
-    unsigned rgbValue = 0;
-    hexString = [hexString stringByReplacingOccurrencesOfString:@"#" withString:@""];
-    NSScanner *scanner = [NSScanner scannerWithString:hexString];
-    [scanner scanHexInt:&rgbValue];
-    
-    return [self colorWithR:((rgbValue & 0xFF0000) >> 16) G:((rgbValue & 0xFF00) >> 8) B:(rgbValue & 0xFF) A:1.0];
-}
-
-- (UIColor *)colorWithR:(CGFloat)red G:(CGFloat)green B:(CGFloat)blue A:(CGFloat)alpha
-{
-    return [UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:alpha];
-}
 
 @end
