@@ -35,7 +35,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 子视图已经移到容器VC上了 子类如有需要进一步布局可在这里。
 - (void)contentViewControllerDidMoveToParent:(UIViewController *)vc;
 
-/// 获取导航栏+状态栏高度
 -(CGFloat)mNavigationbarHeight;
 
 
