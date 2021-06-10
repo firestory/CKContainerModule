@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, HTransitionStyle) {
+    HTransitionStylePresent,
+    HTransitionStyleDismiss,
+    HTransitionStyleNone,
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CKContainerViewController : UIViewController
@@ -20,12 +26,18 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIViewController *selectedViewController;
 @property (nonatomic, copy) NSArray<UIViewController *> *viewControllers;
 @property (nonatomic, strong) NSMutableArray<NSString *> *vcTitles;
+@property (nonatomic) HTransitionStyle transitionStyle;
+
 
 //更多的子控制器切换方法慢慢添加
 
 /// 初始化方法
 /// @param vcs 控制器组
 - (instancetype)initWithViewControllers:(NSArray *)vcs;
+
+- (void)customPresentViewController:(UIViewController *)vc complete:(void(^)(void))complete;
+- (void)customDismissViewController:(UIViewController *)vc complete:(void(^)(void))complete;
+
 
 /// 数组下标变化时触发
 /// @param fromIndex 前一个index
@@ -35,9 +47,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 子视图已经移到容器VC上了 子类如有需要进一步布局可在这里。
 - (void)contentViewControllerDidMoveToParent:(UIViewController *)vc;
 
+/// 导航栏+状态栏高度
 -(CGFloat)mNavigationbarHeight;
 
 
 @end
 
 NS_ASSUME_NONNULL_END
+

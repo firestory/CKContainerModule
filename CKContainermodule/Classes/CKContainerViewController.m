@@ -90,8 +90,6 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-#pragma mark - container method & api
-
 //fetch status bar & navi bar height
 -(CGFloat)mNavigationbarHeight{
     return self.navigationController.navigationBar.frame.size.height + [[UIApplication sharedApplication] statusBarFrame].size.height;
@@ -105,6 +103,19 @@
     //subclass implementation this
 }
 
+#pragma mark - container method & api
+
+- (void)customPresentViewController:(UIViewController *)vc complete:(void(^)(void))complete{
+    if (!vc) return;
+    if (self.selectedViewController == vc) return;
+    [self animationPresentFromVC:self.selectedViewController toVC:vc complete:complete];
+}
+
+- (void)customDismissViewController:(UIViewController *)vc complete:(void(^)(void))complete{
+    if (!vc) return;
+    if (![self.viewControllers containsObject:vc]) return;
+    [self animationDismissFromVC:vc toVC:self.viewControllers.firstObject complete:complete];
+}
 
 #pragma mark - ViewController change
 
@@ -121,31 +132,99 @@
         return;
     }
     
-    //follow steps without animation
     UIViewController *fromVC = self.viewControllers[fromIndex];
-    [self hideContentController:fromVC];
-    
     UIViewController *toVC = self.viewControllers[toIndex];
+        
+    [self hideContentController:fromVC];
     [self displayContentController:toVC];
+
 }
 
-- (void)displayContentController:(UIViewController*)content {
+- (void)displayContentController:(UIViewController*)content{
     if (!content) {return;}
     [self addChildViewController:content];
     content.view.frame = self.view.frame;
     [self.containerView addSubview:content.view];
     self.selectedViewControllerView = content.view;
-    [self frameForContentController];
+//    [self frameForContentController];
     [content didMoveToParentViewController:self];
     [self contentViewControllerDidMoveToParent:content];
 }
 
-- (void)hideContentController:(UIViewController*)content {
+- (void)hideContentController:(UIViewController*)content{
     [content willMoveToParentViewController:nil];
     self.selectedViewControllerView = nil;
     [content.view removeFromSuperview];
     [content removeFromParentViewController];
 }
+
+- (void)animationPresentFromVC:(UIViewController*)fromVC toVC:(UIViewController *)toVC complete:(void(^)(void))complete{
+    fromVC.view.userInteractionEnabled = NO;
+    if (!toVC || !fromVC) {return;}
+    [self addChildViewController:toVC];
+    
+    CGRect toVCFrame = self.view.frame;
+    toVC.view.frame = toVCFrame;
+    [self.containerView addSubview:toVC.view];
+    self.selectedViewControllerView = toVC.view;
+    
+    CGAffineTransform toVCTransformTrans = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, CGRectGetHeight(toVCFrame));
+    
+    toVC.view.transform = toVCTransformTrans;
+    [UIView animateWithDuration:0.35 animations:^{
+        toVC.view.transform = CGAffineTransformIdentity;
+    } completion:^(BOOL finished) {
+        if (finished) {
+            [toVC didMoveToParentViewController:self];
+            [self contentViewControllerDidMoveToParent:toVC];
+            [self addVCToHierarchy:toVC];
+            if (complete) complete();
+            [self hideContentController:fromVC];
+        }else{
+            [self contentViewControllerDidMoveToParent:toVC];
+            [toVC.view removeFromSuperview];
+        }
+        fromVC.view.userInteractionEnabled = YES;
+    }];
+}
+
+- (void)animationDismissFromVC:(UIViewController*)fromVC toVC:(UIViewController *)toVC complete:(void(^)(void))complete{
+    if (!toVC || !fromVC) return;
+    fromVC.view.userInteractionEnabled = NO;
+    [self addChildViewController:toVC];
+    
+    CGRect toVCFrame = self.view.frame;
+    toVC.view.frame = toVCFrame;
+    [self.containerView insertSubview:toVC.view belowSubview:fromVC.view];
+    self.selectedViewControllerView = toVC.view;
+    
+    CGAffineTransform fromVCTransformTrans = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, CGRectGetHeight(toVCFrame));
+    
+    fromVC.view.transform = CGAffineTransformIdentity;
+    [UIView animateWithDuration:0.35 animations:^{
+        fromVC.view.transform = fromVCTransformTrans;
+    } completion:^(BOOL finished) {
+        if (finished) {
+            [toVC didMoveToParentViewController:self];
+            [self contentViewControllerDidMoveToParent:toVC];
+            [self addVCToHierarchy:toVC];
+            !complete?:complete();
+            [self hideContentController:fromVC];
+        }else{
+            self.selectedViewControllerView = fromVC.view;
+            [toVC.view removeFromSuperview];
+        }
+        fromVC.view.userInteractionEnabled = YES;
+    }];
+}
+
+- (void)addVCToHierarchy:(UIViewController *)vc{
+    if ([self.viewControllers containsObject:vc]) return;
+    NSMutableArray *ary = [NSMutableArray arrayWithArray:self.viewControllers];
+    [ary addObject:vc];
+    self.viewControllers = [NSArray arrayWithArray:ary];
+}
+
 
 /// 内容视图约束
 - (void)frameForContentController{
@@ -155,6 +234,5 @@
     [self.containerView addConstraint:[NSLayoutConstraint constraintWithItem:self.selectedViewControllerView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.containerView attribute:NSLayoutAttributeLeading multiplier:1 constant:0]];
     [self.containerView addConstraint:[NSLayoutConstraint constraintWithItem:self.selectedViewControllerView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.containerView attribute:NSLayoutAttributeTrailing multiplier:1 constant:0]];
 }
-
 
 @end
